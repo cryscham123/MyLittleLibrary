@@ -1,0 +1,191 @@
+@import "reset.css";
+@import "https://fonts.googleapis.com/css2?family=Pangolin&display=swap";
+body {
+  font-family: "Pangolin", cursive;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+.header {
+  background-color: rgb(245, 182, 11, 0.9);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 25px 0px;
+  position: relative;
+}
+.header__status-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 25px;
+}
+.header__search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 95%;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  border-radius: 5%/50%;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -20px;
+}
+.header__search-bar input {
+  border: none;
+  font-size: 18px;
+  background-color: whitesmoke;
+}
+.header__search-bar input:focus {
+  border-color: orange;
+}
+.header__search-bar input::placeholder,
+.header__search-bar i {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+}
+.book-of-day {
+  padding: 60px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book-of-day__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.book-of-day__details {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0px;
+}
+.book-of-day__image {
+  height: 150px;
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.book-of-day__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book-of-day__description span {
+  font-weight: 300;
+}
+.book-of-day__description p {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+.book-of-day__reputation {
+  color: rgba(0, 0, 0, 0.2);
+}
+.book-of-day__reputation:nth-child(n + 1) :nth-child(-n + 4) {
+  color: rgb(245, 182, 11, 0.9);
+}
+.book-of-day__ul {
+  display: flex;
+}
+.book-of-day__btn {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+.book-of-day__link {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+.book-of-day__bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 182, 11);
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin-right: 30px;
+}
+.book-of-day__book-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 5px;
+  padding: 0 30px;
+}
+.book-of-day__book-now a {
+  color: rgb(255, 255, 255);
+}
+.popular-authors {
+  padding: 0px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.popular-authors__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.popular-authors__details {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0px;
+}
+.popular-authors__img {
+  height: 110px;
+  width: 90px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.popular-authors__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+.popular-authors__description span {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.popular-authors__description p {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+.top-adventures {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-adventures__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.top-adventures__details {
+  display: flex;
+  justify-content: flex-start;
+}
+.top-adventures__book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px 20px 0px;
+}
+.top-adventures__bookimage {
+  height: 120px;
+  width: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
